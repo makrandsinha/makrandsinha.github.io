@@ -69,17 +69,50 @@ NETHERLANDS<br>
 Manuscript. </li>
 [<a href="https://arxiv.org/abs/2008.07003">arXiv</a>]  [<a href="https://eccc.weizmann.ac.il/report/2020/127/">ECCC</a>]
  <a href="#" onclick="toggle('forrelation');return false;" class="plus" id="forrelation-plus">[Abstract +]</a> <div id="forrelation" class="abstract">
-   <p> Aaronson and Ambainis (SICOMP `18) showed that any partial function on \(N\) bits that can be computed with an advantage \(\delta\) over a random guess by making \(q\) quantum queries, can also be computed classically with an advantage \(\delta/2\) by a randomized decision tree making \({O}_q(N^{1-\frac{1}{2q}}\delta^{-2})\) queries. Moreover, they conjectured the \(k\)-Forrelation problem --- a partial function that can be computed with \(q = \lceil k/2 \rceil\) quantum queries --- to be a suitable candidate for exhibiting such an extremal separation. </p>
-    
-    <p> We prove their conjecture by showing a tight lower bound of \(\widetilde{\Omega}_k(N^{1-1/k})\) for the randomized query complexity of \(k\)-Forrelation, where the advantage \(\delta = 1/\mathrm{polylog}^k(N)\) and \(\widetilde{\Omega}_k\) hides \(\mathrm{polylog}^k(N)\) factors. Our proof relies on classical Gaussian tools, in particular, Gaussian interpolation and Gaussian integration by parts, and in fact, shows a more general statement, that to prove lower bounds for \(k\)-Forrelation against a family of functions, it suffices to bound the \(\ell_1\)-weight of the Fourier coefficients at levels \(k, 2k, 3k, \ldots, (k-1)k\) for functions in the family.</p>
 
+      <p> Aaronson and Ambainis (SICOMP `18) showed that any partial function on \(N\) bits that can be computed with an advantage \(\delta\) over a random guess by making \(q\) quantum queries, can also be computed classically with an advantage \(\delta/2\) by a randomized decision tree making \({O}_q(N^{1-\frac{1}{2q}}\delta^{-2})\) queries. Moreover, they conjectured the \(k\)-Forrelation problem --- a partial function that can be computed with \(q = \lceil k/2 \rceil\) quantum queries --- to be a suitable candidate for exhibiting such an extremal separation. </p>
+   
+      <p> We prove their conjecture by showing a tight lower bound of \(\widetilde{\Omega}(N^{1-1/k})\) for the randomized query complexity of \(k\)-Forrelation, where the advantage \(\delta = 2^{-O(k)}\). By standard amplification arguments, this gives an explicit partial function that  exhibits an \(O_\epsilon(1)\) vs \(\Omega(N^{1-\epsilon})\) separation between bounded-error quantum and randomized query complexities, where \(\epsilon>0\) can be made arbitrarily small. Our proof also gives the same bound for the closely related but non-explicit \(k\)-Rorrelation function introduced by Tal (FOCS `20). </p>
+     
+      <p> Our techniques rely on classical Gaussian tools, in particular, Gaussian interpolation and Gaussian integration by parts, and in fact, give a more general statement.  We show that to prove lower bounds for \(k\)-Forrelation against a family of functions, it suffices to bound the \(\ell_1\)-weight of the Fourier coefficients between levels \(k\) and \((k-1)k\). We also prove new interpolation and integration by parts identities that might be of independent interest in the context of rounding high-dimensional Gaussian vectors. </p> 
 </div>
 <noscript>
 	<div class="nsabstract">
+
+
       <p> Aaronson and Ambainis (SICOMP `18) showed that any partial function on \(N\) bits that can be computed with an advantage \(\delta\) over a random guess by making \(q\) quantum queries, can also be computed classically with an advantage \(\delta/2\) by a randomized decision tree making \({O}_q(N^{1-\frac{1}{2q}}\delta^{-2})\) queries. Moreover, they conjectured the \(k\)-Forrelation problem --- a partial function that can be computed with \(q = \lceil k/2 \rceil\) quantum queries --- to be a suitable candidate for exhibiting such an extremal separation. </p>
-    
-    <p> We prove their conjecture by showing a tight lower bound of \(\widetilde{\Omega}_k(N^{1-1/k})\) for the randomized query complexity of \(k\)-Forrelation, where the advantage \(\delta = 1/\mathrm{polylog}^k(N)\) and \(\widetilde{\Omega}_k\) hides \(\mathrm{polylog}^k(N)\) factors. Our proof relies on classical Gaussian tools, in particular, Gaussian interpolation and Gaussian integration by parts, and in fact, shows a more general statement, that to prove lower bounds for \(k\)-Forrelation against a family of functions, it suffices to bound the \(\ell_1\)-weight of the Fourier coefficients at levels \(k, 2k, 3k, \ldots, (k-1)k\) for functions in the family.</p>
+   
+      <p> We prove their conjecture by showing a tight lower bound of \(\widetilde{\Omega}(N^{1-1/k})\) for the randomized query complexity of \(k\)-Forrelation, where the advantage \(\delta = 2^{-O(k)}\). By standard amplification arguments, this gives an explicit partial function that  exhibits an \(O_\epsilon(1)\) vs \(\Omega(N^{1-\epsilon})\) separation between bounded-error quantum and randomized query complexities, where \(\epsilon>0\) can be made arbitrarily small. Our proof also gives the same bound for the closely related but non-explicit \(k\)-Rorrelation function introduced by Tal (FOCS `20). </p>
+     
+      <p> Our techniques rely on classical Gaussian tools, in particular, Gaussian interpolation and Gaussian integration by parts, and in fact, give a more general statement.  We show that to prove lower bounds for \(k\)-Forrelation against a family of functions, it suffices to bound the \(\ell_1\)-weight of the Fourier coefficients between levels \(k\) and \((k-1)k\). We also prove new interpolation and integration by parts identities that might be of independent interest in the context of rounding high-dimensional Gaussian vectors. </p>
     </div></noscript>
+
+<li>
+<span class="papertitle"> Majorizing Measures for the Optimizer </span><br>
+Sander Borst, <a href="https://homepages.cwi.nl/~dadush/">Daniel Dadush</a>  <a href="http://www.nolver.net/home/">Neil Olver</a> and Makrand Sinha<br>
+Manuscript. To appear in <strong>ITCS '21</strong>. </li>
+<!--[<a href="https://arxiv.org/abs/2008.07003">arXiv</a>]  [<a
+        href="https://eccc.weizmann.ac.il/report/2020/127/">ECCC</a>]-->
+ <a href="#" onclick="toggle('chaining');return false;" class="plus" id="chaining-plus">[Abstract +]</a> <div id="chaining" class="abstract">
+     <p> The theory of majorizing measures, extensively developed by Fernique, Talagrand and many others, provides one of the most general frameworks for controlling the behavior of stochastic processes. In particular, it can be applied to derive quantitative bounds on the expected suprema and the degree of continuity of sample paths for many processes.</p>
+     <p>One of the crowning achievements of the theory is Talagrand’s tight alternative characterization of the suprema of Gaussian processes in terms of majorizing measures. The proof of this theorem was difficult, and thus considerable effort was put into the task of developing both shorter and easier to understand proofs. A major reason for this difficulty was considered to be theory of majorizing measures itself, which had the reputation of being opaque and mysterious. As a consequence, most recent treatments of the theory (including by Talagrand himself) have eschewed the use of majorizing measures in favor of a purely combinatorial approach (the generic chaining) where objects based on sequences of partitions provide roughly matching upper and lower bounds on the desired expected supremum.</p>
+     <p> In this paper, we return to majorizing measures as a primary object of study, and give a viewpoint that we think is very natural and clarifying from an optimization perspective. As our main contribution, we give an algorithmic proof of the majorizing measures theorem based on two parts:</p>
+     <p> -  We make the simple (but apparently new) observation that finding the best majorizing measure can be cast as a convex program. This also allows for efficiently computing the measure using off-the-shelf methods from convex optimization.</p>
+    <p> - We obtain tree-based upper and lower bound certificates by rounding, in a series of steps, the primal and dual solutions to this convex program.</p>
+
+<p>While duality has conceptually been part of the theory since its beginnings, as far as we are aware no explicit link to convex optimization has been previously made.</p>
+</div>
+<noscript>
+	<div class="nsabstract">
+  <p> The theory of majorizing measures, extensively developed by Fernique, Talagrand and many others, provides one of the most general frameworks for controlling the behavior of stochastic processes. In particular, it can be applied to derive quantitative bounds on the expected suprema and the degree of continuity of sample paths for many processes.</p>
+     <p>One of the crowning achievements of the theory is Talagrand’s tight alternative character- ization of the suprema of Gaussian processes in terms of majorizing measures. The proof of this theorem was difficult, and thus considerable effort was put into the task of developing both shorter and easier to understand proofs. A major reason for this difficulty was considered to be theory of majorizing measures itself, which had the reputation of being opaque and mysterious. As a consequence, most recent treatments of the theory (including by Talagrand himself) have eschewed the use of majorizing measures in favor of a purely combinatorial approach (the generic chaining) where objects based on sequences of partitions provide roughly matching upper and lower bounds on the desired expected supremum.</p>
+     <p> In this paper, we return to majorizing measures as a primary object of study, and give a viewpoint that we think is very natural and clarifying from an optimization perspective. As our main contribution, we give an algorithmic proof of the majorizing measures theorem based on two parts:</p>
+     <p> -  We make the simple (but apparently new) observation that finding the best majorizing measure can be cast as a convex program. This also allows for efficiently computing the measure using off-the-shelf methods from convex optimization.</p>
+    <p> - We obtain tree-based upper and lower bound certificates by rounding, in a series of steps, the primal and dual solutions to this convex program.</p>
+
+<p>While duality has conceptually been part of the theory since its beginnings, as far as we are aware no explicit link to convex optimization has been previously made.</p>
+    </div></noscript>
+
 
 <li>
 <span class="papertitle">Online Discrepancy Minimization for Stochastic Arrivals</span><br>
@@ -176,7 +209,7 @@ We give an example of a boolean function whose information complexity is exponen
 <li>
 <span class="papertitle">Edge Estimation with Independent Set Oracles</span><br>
 <a href="https://www.cs.washington.edu/people/faculty/beame/">Paul Beame</a>, <a href="http://sarielhp.org/">Sariel Har-Peled</a>, <a href="https://homes.cs.washington.edu/~sivanr/">Sivaramakrishnan Natarajan Ramamoorthy</a>, <a href="https://sites.google.com/site/cyrusrashtchian/">Cyrus Rashtchian</a> and Makrand Sinha<br>
-Appeared in <strong>ITCS '18</strong>. Full version in <em><strong>ACM Transaction on Algorithms</strong></em>, 2020.</li>
+Appeared in <strong>ITCS '18</strong>. Full version in <em><strong>ACM Transactions on Algorithms</strong></em>, 2020.</li>
 [<a href="http://arxiv.org/abs/1711.07567">arXiv</a>] <a href="#" onclick="toggle('indset');return false;" class="plus" id="indset-plus">[Abstract +]</a> <div id="indset" class="abstract"> 
 	<p>
 	We study the problem of estimating the number of edges in a graph with access to only an independent set oracle. Independent set queries draw motivation from group testing and have applications to the complexity of decision versus counting problems. We give two algorithms to estimate the number of edges in an \(n\)-vertex graph: one that uses only \(\mathrm{polylog}(n)\) bipartite independent set queries, and another one that uses \({n}^{2/3} \cdot \mathrm{polylog}(n)\) independent set queries.
