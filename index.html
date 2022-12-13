@@ -45,7 +45,8 @@ Berkeley CA 94720<br>
 <!--<p class="about">Previously I completed my Masters at the <a
     href="http://www.inf.ethz.ch/">Computer Science Department</a>  in <a href="http://www.ethz.ch/index_EN">ETH Z&uuml;rich</a> advised by Thomas Holenstein. Before that I did a Bachelor's in Computer Science (2005-2009) at <a href="http://www.cse.iitk.ac.in/">IIT Kanpur</a>.</p>-->
 
-<p class="about">My Curriculum Vitae: <a href="./makrand_cv.pdf">CV [PDF]</a>
+<!--<p class="about">My Curriculum Vitae: <a href="./makrand_cv.pdf">CV
+    [PDF]</a>-->
 
 <h3>News</h3>
 In Fall 2023, I will be joining <span class="papertitle">University of Illinois Urbana-Champaign</span> as an assistant professor in the Department of Computer Science! <strong>I am looking for PhD students to start in Fall 2023.</strong>
@@ -56,12 +57,65 @@ In Fall 2023, I will be joining <span class="papertitle">University of Illinois 
 <h2>Publications</h2>
 <ul id="pubs">
 
+<li>
+<span class="papertitle"> Quantum-Classical Tradeoffs in the Random Oracle Model</span><br>
+<a href="https://yassine-hamoudi.github.io/">Yassine Hamoudi</a>, <a href="https://sites.google.com/view/qipengliu">Qipeng Liu</a> and Makrand Sinha<br> 
+Preprint.</li>
+[<a href="https://arxiv.org/abs/2211.12954">arXiv</a>] 
+ <a href="#" onclick="toggle('hybrid');return false;" class="plus" id="hybrid-plus">[Abstract +]</a> <div id="hybrid" class="abstract">
+     <p>We study tradeoffs between quantum and classical queries for hybrid algorithms that have black-box access to a random oracle. Although there are several established techniques for proving query lower bounds for both quantum and classical algorithms, there is no such widely applicable technique for hybrid algorithms and the optimal tradeoffs for many fundamental problems are still unknown --- an optimal tradeoff for the search problem was only shown recently by Rosmanis (arXiv 2022), although not in the random oracle model. For  another fundamental problem, collision finding, the optimal tradeoff was not known.</p>
+
+     <p>In this work, we develop a framework for recording a query transcript for quantum-classical algorithms that represents the knowledge gained by the algorithm. The main feature of this framework is to allow us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- in a consistent way. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the <em>compressed oracle</em> framework of Zhandry (CRYPTO 2019) for recording quantum queries. We demonstrate its applicability by giving a simpler proof of the optimal quantum-classical tradeoff for search and by showing an optimal tradeoff for collision finding.</p>
+</div>
+<noscript>
+<div class="nsabstract">
+    <p>We study tradeoffs between quantum and classical queries for hybrid algorithms that have black-box access to a random oracle. Although there are several established techniques for proving query lower bounds for both quantum and classical algorithms, there is no such widely applicable technique for hybrid algorithms and the optimal tradeoffs for many fundamental problems are still unknown --- an optimal tradeoff for the search problem was only shown recently by Rosmanis (arXiv 2022), although not in the random oracle model. For  another fundamental problem, collision finding, the optimal tradeoff was not known.</p>
+
+    <p> In this work, we develop a framework for recording a query transcript for quantum-classical algorithms that represents the knowledge gained by the algorithm. The main feature of this framework is to allow us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- in a consistent way. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the <em>compressed oracle</em> framework of Zhandry (CRYPTO 2019) for recording quantum queries. We demonstrate its applicability by giving a simpler proof of the optimal quantum-classical tradeoff for search and by showing an optimal tradeoff for collision finding.</p>
+</div></noscript>
+
+<li>
+<span class="papertitle"> Quantum Cryptography in Algorithmica</span><br>
+<a href="https://www.cs.utexas.edu/~kretsch/">William Kretschmer</a>, <a href="https://cs-people.bu.edu/luowenq/">Luowen Qian</a>, Makrand Sinha and <a href="https://www.avishaytal.org/">Avishay Tal</a><br> 
+Preprint. Contributed Talk at <strong>QIP 2023</strong>.</li>
+[<a href="https://arxiv.org/abs/2212.00879">arXiv</a>] 
+ <a href="#" onclick="toggle('prs');return false;" class="plus" id="prs-plus">[Abstract +]</a> <div id="prs" class="abstract">
+     <p>We construct a classical oracle relative to which \(P = NP\) yet single-copy secure pseudorandom
+quantum states exist. In the language of Impagliazzo’s five worlds, this is a construction of
+pseudorandom states in “Algorithmica,” and hence shows that in a black-box setting, quantum
+cryptography based on pseudorandom states is possible even if one-way functions do not exist.
+As a consequence, we demonstrate that there exists a property of a cryptographic hash function
+that simultaneously (1) suffices to construct pseudorandom states, (2) holds for a random oracle,
+and (3) is independent of \(P\) vs. \(NP\) in the black-box setting. We also introduce a conjecture
+that would generalize our results to multi-copy secure pseudorandom states.
+We build on the recent construction by Aaronson, Ingram, and Kretschmer (CCC 2022) of an
+oracle relative to which \(P = NP\) yet \(BQP \neq QCMA\), based on hardness of the OR \(\circ\) Forrelation
+problem. Our proof also introduces a new discretely-defined variant of the Forrelation distribution,
+for which we prove pseudorandomness against \(AC0\) circuits. This variant may be of independent
+interest.</p>
+</div>
+<noscript>
+<div class="nsabstract">
+ <p>We construct a classical oracle relative to which \(P = NP\) yet single-copy secure pseudorandom
+quantum states exist. In the language of Impagliazzo’s five worlds, this is a construction of
+pseudorandom states in “Algorithmica,” and hence shows that in a black-box setting, quantum
+cryptography based on pseudorandom states is possible even if one-way functions do not exist.
+As a consequence, we demonstrate that there exists a property of a cryptographic hash function
+that simultaneously (1) suffices to construct pseudorandom states, (2) holds for a random oracle,
+and (3) is independent of \(P\) vs. \(NP\) in the black-box setting. We also introduce a conjecture
+that would generalize our results to multi-copy secure pseudorandom states.
+We build on the recent construction by Aaronson, Ingram, and Kretschmer (CCC 2022) of an
+oracle relative to which \(P = NP\) yet \(BQP \neq QCMA\), based on hardness of the OR \(\circ\) Forrelation
+problem. Our proof also introduces a new discretely-defined variant of the Forrelation distribution,
+for which we prove pseudorandomness against \(AC0\) circuits. This variant may be of independent
+interest.</p>
+</div></noscript>
 
 
 <li>
 <span class="papertitle"> Influence in Completely Bounded Block-multilinear Forms and Classical Simulation of Quantum Algorithms</span><br>
-<a href="https://www.win.tue.nl/~nikhil/">Nikhil Bansal</a>, Makrand Sinha and <a href="https://homepages.cwi.nl/~rdewolf">Ronald de Wolf</a><br>
-To appear in <strong>CCC 2022</strong>.</li>
+<a href="https://www.win.tue.nl/~nikhil/">Nikhil Bansal</a>, Makrand Sinha and <a href="https://homepages.cwi.nl/~rdewolf">Ronald de Wolf</a><br> 
+In proceedings of <strong>CCC 2022</strong>. Contributed Talk at <strong>QIP 2023</strong>.</li>
 [<a href="http://arxiv.org/abs/2203.00212">arXiv</a>] 
  <a href="#" onclick="toggle('aa');return false;" class="plus" id="aa-plus">[Abstract +]</a> <div id="aa" class="abstract">
      <p>The Aaronson-Ambainis conjecture (Theory of Computing '14) says that every low-degree bounded polynomial on the Boolean hypercube has an influential variable. This conjecture, if true, would imply that the acceptance probability of every \(d\)-query quantum algorithm can be well-approximated almost everywhere (i.e., on almost all inputs) by a \(\mathrm{poly}(d)\)-query classical algorithm. We prove a special case of the conjecture: in every completely bounded  degree-\(d\) block-multilinear form with constant variance, there always exists a variable with influence at least \(1/\mathrm{poly}(d)\). In a certain sense, such polynomials characterize the acceptance probability of quantum query algorithms, as shown by Arunachalam, Br&#239et and Palazuelos (SICOMP '19). As a corollary we obtain efficient classical almost-everywhere simulation for a particular class of quantum algorithms that includes for instance \(k\)-fold Forrelation. Our main technical result relies on connections to free probability theory. </p>
@@ -74,7 +128,7 @@ To appear in <strong>CCC 2022</strong>.</li>
 <li>
 <span class="papertitle"> Smoothed Analysis of the Komlos Conjecture</span><br>
 <a href="https://www.win.tue.nl/~nikhil/">Nikhil Bansal</a>, <a href="https://jhtdavid96.wixsite.com/jianghaotian">Haotian Jiang</a>,  <a href="https://hackmd.io/@raghum/index">Raghu Meka</a>, <a href="https://faculty.cc.gatech.edu/~ssingla7/">Sahil Singla</a> and Makrand Sinha<br>
-To appear in <strong>ICALP 2022</strong>.</li>
+Appeared in <strong>ICALP 2022</strong>.</li>
 [<a href="http://arxiv.org/abs/2204.11427">arXiv</a>] 
  <a href="#" onclick="toggle('smoothed-komlos');return false;" class="plus" id="smoothed-komlos-plus">[Abstract +]</a> <div id="smoothed-komlos" class="abstract">
      <p> The well-known Komlos conjecture states that given \(n\) vectors in \(\mathbb{R}^d\) with Euclidean norm at most one, there always exists a \(\pm 1\) coloring such that the \(\ell_{\infty}\) norm of the signed-sum vector is a constant independent of \(n\) and \(d\). We prove this conjecture in a smoothed analysis setting where the vectors are perturbed by adding a small Gaussian noise and when the number of vectors \(n =\omega(d\log d)\). The dependence of \(n\) on \(d\) is the best possible even in a completely random setting. </p>
