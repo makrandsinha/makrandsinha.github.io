@@ -21,21 +21,23 @@
 <h1>Makrand Sinha</h1>
 
 <p>
-Simons Institute for the Theory of Computing <br>
-UC Berkeley<br>
-121 Calvin Lab<br>
-Berkeley CA 94720<br>
-
+Thomas M. Siebel Center for Computer Science <br>
+201 North Goodwin Avenue <br>
+Urbana, IL 61801-2302 <br>
 </p>
 
 <p>
-<b>Email:</b> firstname@ followed by berkeley edu separated by dots 
+<b>Email:</b> msinha @ followed by illinois edu separated by dots 
 </p>
 
 <div id="main">
 
 <h2>About Me</h2>
-<p class="about">I am a Simons-Berkeley postdoctoral fellow at the <a href="https://simons.berkeley.edu">Simons Institute</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a>. Previously, I was a postdoctoral researcher in the <a href ="https://www.cwi.nl/research/groups/networks-and-optimization">Networks and Optimization</a> group at <a href="https://www.cwi.nl/">CWI</a> in Amsterdam. 
+
+
+<p class="about">I am an assistant professor in the Department of Computer Science at the <span class="papertitle">University of Illinois at Urbana-Champaign</span>.
+
+Previously I was a Simons-Berkeley postdoctoral fellow at the <a href="https://simons.berkeley.edu">Simons Institute</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a> and a postdoctoral researcher in the <a href ="https://www.cwi.nl/research/groups/networks-and-optimization">Networks and Optimization</a> group at <a href="https://www.cwi.nl/">CWI</a> in Amsterdam. 
 </p>
 
 <p>My research is in the area of theoretical computer science. My primary research interests lie in the <strong>foundations of quantum and classical computation</strong> and <strong>optimization</strong>, and specifically in understanding the relative power of quantum vs classical algorithms and communication protocols, understanding limitations of various approaches in optimization such as Linear or Semidefinite Programs, and designing algorithms for various optimization problems.</p>
@@ -48,14 +50,45 @@ Berkeley CA 94720<br>
 <!--<p class="about">My Curriculum Vitae: <a href="./makrand_cv.pdf">CV
     [PDF]</a>-->
 
-<h3>News</h3>
+<!--<h3>News</h3>
 In Fall 2023, I will be joining <span class="papertitle">University of Illinois Urbana-Champaign</span> as an assistant professor in the Department of Computer Science! <strong>I am looking for PhD students to start in Fall 2023.</strong>
-
+-->
 </div>
+
+<h3>Teaching</h3>
+<ul>
+    <li> <a href="https://courses.grainger.illinois.edu/cs498qc3/">CS 498QC: Introduction to Quantum Computation</a>
+</ul>
 
 <div id="pubs">
 <h2>Publications</h2>
 <ul id="pubs">
+
+<li>
+<span class="papertitle"> Fourier Growth of Communication Protocols for XOR Functions</span><br>
+<a href="https://www.cs.princeton.edu/~ugirish/">Uma Girish</a>, Makrand Sinha,  <a href="https://www.avishaytal.org/">Avishay Tal</a> and <a href="https://shlw.github.io/">Kewen Wu</a>,<br> 
+To appear in <strong>FOCS 2023</strong>.</li>
+[<a href="https://arxiv.org/abs/2307.13926">arXiv</a>] 
+ <a href="#" onclick="toggle('hybrid');return false;" class="plus" id="hybrid-plus">[Abstract +]</a> <div id="hybrid" class="abstract">
+     <p>The level-\(k\) \(\ell_1\)-Fourier weight of a Boolean function refers to the sum of absolute values of its level-\(k\) Fourier coefficients. Fourier growth refers to the growth of these weights as \(k\) grows. It has been extensively studied for various computational models, and bounds on the Fourier growth, even for the first few levels, have proven useful in learning theory, circuit lower bounds, pseudorandomness, and quantum-classical separations.</p>
+
+     <p> In this work, we investigate the Fourier growth of certain functions that naturally arise from communication protocols for XOR functions (partial functions evaluated on the bitwise XOR of the inputs \(x\) and \(y\) to Alice and Bob). If a protocol \(\mathcal{C}\) computes an XOR function, then \(\mathcal{C}(x, y)\) is a function of the parity \(x \oplus y\). This motivates us to analyze the <emph>XOR-fiber</emph> of the communication protocol \(\mathcal{C}\), defined as \(h(z) := \mathbb{E}_{x,y}[\mathcal{C}(x, y) | x\oplus y = z]\).</p>
+
+     <p>We present improved Fourier growth bounds for the XOR-fibers of randomized protocols that communicate \(d\) bits. For the first level, we show a tight \(O(\sqrt{d})\) bound and obtain a new coin theorem, as well as an alternative proof for the tight randomized communication lower bound for the Gap-Hamming problem. For the second level, we show an \(d^{3/2} \cdot \mathrm{polylog}(n)\) bound, which improves the previous \(O(d^2)\) bound by Girish, Raz, and Tal (ITCS 2021) and implies a polynomial improvement on the randomized communication lower bound for the XOR-lift of the Forrelation problem, which extends the quantum-classical gap for this problem.</p>
+
+     <p>Our analysis is based on a new way of adaptively partitioning a relatively large set in Gaussian space to control its moments in all directions. We achieve this via martingale arguments and allowing protocols to transmit real values. We also show a connection between Fourier growth and lifting theorems with constant-sized gadgets as a potential approach to prove optimal bounds for the second level and beyond.</p>
+</div>
+<noscript>
+<div class="nsabstract">
+ <p>The level-\(k\) \(\ell_1\)-Fourier weight of a Boolean function refers to the sum of absolute values of its level-\(k\) Fourier coefficients. Fourier growth refers to the growth of these weights as \(k\) grows. It has been extensively studied for various computational models, and bounds on the Fourier growth, even for the first few levels, have proven useful in learning theory, circuit lower bounds, pseudorandomness, and quantum-classical separations.</p>
+
+  <p> In this work, we investigate the Fourier growth of certain functions that naturally arise from communication protocols for XOR functions (partial functions evaluated on the bitwise XOR of the inputs \(x\) and \(y\) to Alice and Bob). If a protocol \(\mathcal{C}\) computes an XOR function, then \(\mathcal{C}(x, y)\) is a function of the parity \(x \oplus y\). This motivates us to analyze the <emph>XOR-fiber</emph> of the communication protocol \(\mathcal{C}\), defined as \(h(z) := \mathbb{E}_{x,y}[\mathcal{C}(x, y) | x\oplus y = z]\).</p>
+
+     <p>We present improved Fourier growth bounds for the XOR-fibers of randomized protocols that communicate \(d\) bits. For the first level, we show a tight \(O(\sqrt{d})\) bound and obtain a new coin theorem, as well as an alternative proof for the tight randomized communication lower bound for the Gap-Hamming problem. For the second level, we show an \(d^{3/2} \cdot \mathrm{polylog}(n)\) bound, which improves the previous \(O(d^2)\) bound by Girish, Raz, and Tal (ITCS 2021) and implies a polynomial improvement on the randomized communication lower bound for the XOR-lift of the Forrelation problem, which extends the quantum-classical gap for this problem.</p>
+
+     <p>Our analysis is based on a new way of adaptively partitioning a relatively large set in Gaussian space to control its moments in all directions. We achieve this via martingale arguments and allowing protocols to transmit real values. We also show a connection between Fourier growth and lifting theorems with constant-sized gadgets as a potential approach to prove optimal bounds for the second level and beyond.</p>
+</div></noscript>
+
 
 <li>
 <span class="papertitle"> Quantum-Classical Tradeoffs in the Random Oracle Model</span><br>
@@ -77,7 +110,7 @@ Preprint.</li>
 <li>
 <span class="papertitle"> Quantum Cryptography in Algorithmica</span><br>
 <a href="https://www.cs.utexas.edu/~kretsch/">William Kretschmer</a>, <a href="https://cs-people.bu.edu/luowenq/">Luowen Qian</a>, Makrand Sinha and <a href="https://www.avishaytal.org/">Avishay Tal</a><br> 
-Preprint. Contributed Talk at <strong>QIP 2023</strong>.</li>
+Appeared in <strong>STOC 2023</strong>. Contributed Talk at <strong>QIP 2023</strong>. Invited Talk at <strong>QCrypt 2023</strong>.</li>
 [<a href="https://arxiv.org/abs/2212.00879">arXiv</a>] 
  <a href="#" onclick="toggle('prs');return false;" class="plus" id="prs-plus">[Abstract +]</a> <div id="prs" class="abstract">
      <p>We construct a classical oracle relative to which \(P = NP\) yet single-copy secure pseudorandom
