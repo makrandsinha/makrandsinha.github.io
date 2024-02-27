@@ -65,10 +65,102 @@ In Fall 2023, I will be joining <span class="papertitle">University of Illinois 
 <h2>Publications</h2>
 <ul id="pubs">
 
+
+<li>
+<span class="papertitle">Pseudorandom unitaries with non-adaptive security</span><br>
+Tony Metger, <a href="http://www.mit.edu/~poremba">Alex Poremba</a>, Makrand Sinha and <a href="https://henryyuen.net/">Henry Yuen</a><br> 
+Preprint.</li>
+[<a href="https://arxiv.org/abs/2402.14803">arXiv</a>] 
+ <a href="#" onclick="toggle('pru');return false;" class="plus" id="pru-plus">[Abstract +]</a> <div id="pru" class="abstract">
+Pseudorandom unitaries (PRUs) are ensembles of efficiently implementable unitary operators that cannot be distinguished from Haar random unitaries by any quantum polynomial-time algorithm with query access to the unitary. We present a simple PRU construction that is a concatenation of a random Clifford unitary, a pseudorandom binary phase operator, and a pseudorandom permutation operator. We prove that this PRU construction is secure against non-adaptive distinguishers assuming the existence of quantum-secure one-way functions. This means that no efficient quantum query algorithm that is allowed a single application of \(U^{\otimes \mathrm{poly}(n)}\) can distinguish whether an \(n\)-qubit unitary \(U\) was drawn from the Haar measure or our PRU ensemble. We conjecture that our PRU construction remains secure against adaptive distinguishers, i.e. secure against distinguishers that can query the unitary polynomially many times in sequence, not just in parallel. 
+ </div>
+<noscript>
+<div class="nsabstract">
+Pseudorandom unitaries (PRUs) are ensembles of efficiently implementable unitary operators that cannot be distinguished from Haar random unitaries by any quantum polynomial-time algorithm with query access to the unitary. We present a simple PRU construction that is a concatenation of a random Clifford unitary, a pseudorandom binary phase operator, and a pseudorandom permutation operator. We prove that this PRU construction is secure against non-adaptive distinguishers assuming the existence of quantum-secure one-way functions. This means that no efficient quantum query algorithm that is allowed a single application of \(U^{\otimes \mathrm{poly}(n)}\) can distinguish whether an \(n\)-qubit unitary \(U\) was drawn from the Haar measure or our PRU ensemble. We conjecture that our PRU construction remains secure against adaptive distinguishers, i.e. secure against distinguishers that can query the unitary polynomially many times in sequence, not just in parallel. 
+</div></noscript>
+
+
+
+<li>
+<span class="papertitle">The Power of Adaptivity in Quantum Query Algorithms</span><br>
+<a href="https://www.cs.princeton.edu/~ugirish/">Uma Girish</a>, Makrand Sinha,  <a href="https://www.avishaytal.org/">Avishay Tal</a> and <a href="https://shlw.github.io/">Kewen Wu</a><br> 
+To appear in <strong>STOC 2024</strong>.</li>
+[<a href="https://arxiv.org/abs/2311.16057">arXiv</a>] 
+ <a href="#" onclick="toggle('adaptive');return false;" class="plus" id="adaptive-plus">[Abstract +]</a> <div id="adaptive" class="abstract">
+     <p>Motivated by limitations on the depth of near-term quantum devices, we study the depth-computation trade-off in the query model, where the depth corresponds to the number of adaptive query rounds and the computation per layer corresponds to the number of parallel queries per round. We achieve the strongest known separation between quantum algorithms with \(r\) versus \(r−1\) rounds of adaptivity. We do so by using the \(k\)-fold Forrelation problem introduced by Aaronson and Ambainis (SICOMP'18). For \(k=2r\), this problem can be solved using an \(r\) round quantum algorithm with only one query per round, yet we show that any \(r−1\) round quantum algorithm needs an exponential (in the number of qubits) number of parallel queries per round.</p>
+
+
+     <p>Our results are proven following the Fourier analytic machinery developed in recent works on quantum-classical separations. The key new component in our result are bounds on the Fourier weights of quantum query algorithms with bounded number of rounds of adaptivity. These may be of independent interest as they distinguish the polynomials that arise from such algorithms from arbitrary bounded polynomials of the same degree.</p>
+</div>
+<noscript>
+<div class="nsabstract">
+     <p>Motivated by limitations on the depth of near-term quantum devices, we study the depth-computation trade-off in the query model, where the depth corresponds to the number of adaptive query rounds and the computation per layer corresponds to the number of parallel queries per round. We achieve the strongest known separation between quantum algorithms with \(r\) versus \(r−1\) rounds of adaptivity. We do so by using the \(k\)-fold Forrelation problem introduced by Aaronson and Ambainis (SICOMP'18). For \(k=2r\), this problem can be solved using an \(r\) round quantum algorithm with only one query per round, yet we show that any \(r−1\) round quantum algorithm needs an exponential (in the number of qubits) number of parallel queries per round.</p>
+
+
+     <p>Our results are proven following the Fourier analytic machinery developed in recent works on quantum-classical separations. The key new component in our result are bounds on the Fourier weights of quantum query algorithms with bounded number of rounds of adaptivity. These may be of independent interest as they distinguish the polynomials that arise from such algorithms from arbitrary bounded polynomials of the same degree.</p>
+</div></noscript>
+
+
+<li>
+<span class="papertitle"> The NISQ Complexity of Collision Finding</span><br>
+<a href="https://yassine-hamoudi.github.io/">Yassine Hamoudi</a>, <a href="https://sites.google.com/view/qipengliu">Qipeng Liu</a> and Makrand Sinha<br> 
+To appear in <strong>Eurocrypt 2024</strong>.</li>
+<a href="#" onclick="toggle('hybrid');return false;" class="plus" id="hybrid-plus">[Abstract +]</a> <div id="hybrid" class="abstract">
+ <p>
+     Collision-resistant hashing, a fundamental primitive in modern cryptography, ensures that there is no efficient way to find distinct inputs that produce the same hash value. This property underpins the security of various cryptographic applications, making it crucial to understand its complexity. The complexity of this problem is well-understood in the classical setting and \(\Theta(N^{1/2})\) queries are needed to find a collision. However, the advent of quantum computing has introduced new challenges since quantum adversaries --- equipped with the power of quantum queries --- can find collisions much more efficiently. Brassard, Høyer and Tapp and Aaronson and Shi established that full-scale quantum adversaries require \(\Theta(N^{1/3})\) queries to find a collision, prompting a need for longer hash outputs, which impacts efficiency in terms of the key lengths needed for security.</p>
+
+ <p>This paper explores the implications of quantum attacks in the Noisy-Intermediate Scale Quantum (NISQ) era. In this work, we investigate three different models for NISQ algorithms and achieve <em>tight bounds for all of them</em>:
+ <ul>
+<li> A hybrid algorithm making adaptive quantum or classical queries but with a limited quantum query budget, or
+<li> quantum algorithm with access to a noisy oracle, or
+<li> hybrid algorithm with an upper bound on its maximum quantum depth; i.e. a classical algorithm aided by low-depth quantum circuits.
+</ul>
+ </p>
+
+<p>Previously, only results for the preimage search problem were known for these models (by Sun and Zheng; Rosmanis; Chen, Cotler, Huang and Li) while nothing was known about the collision finding problem.</p>
+
+ <p>Along with our main results, we develop an information-theoretic framework for recording query transcripts of quantum-classical algorithms. The main feature of this framework is that it allows us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- consistently. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the compressed oracle framework of Zhandry for recording quantum queries. We demonstrate its applicability by giving simpler proofs of the optimal lower bounds for NISQ preimage search and by showing optimal lower bounds for NISQ collision finding.</p>
+
+
+</div>
+<noscript>
+<div class="nsabstract">
+<p>
+     Collision-resistant hashing, a fundamental primitive in modern cryptography, ensures that there is no efficient way to find distinct inputs that produce the same hash value. This property underpins the security of various cryptographic applications, making it crucial to understand its complexity. The complexity of this problem is well-understood in the classical setting and \(\Theta(N^{1/2})\) queries are needed to find a collision. However, the advent of quantum computing has introduced new challenges since quantum adversaries --- equipped with the power of quantum queries --- can find collisions much more efficiently. Brassard, Høyer and Tapp and Aaronson and Shi established that full-scale quantum adversaries require \(\Theta(N^{1/3})\) queries to find a collision, prompting a need for longer hash outputs, which impacts efficiency in terms of the key lengths needed for security.</p>
+
+ <p>This paper explores the implications of quantum attacks in the Noisy-Intermediate Scale Quantum (NISQ) era. In this work, we investigate three different models for NISQ algorithms and achieve <em>tight bounds for all of them</em>:
+ <ul>
+<li> A hybrid algorithm making adaptive quantum or classical queries but with a limited quantum query budget, or
+<li> quantum algorithm with access to a noisy oracle, or
+<li> hybrid algorithm with an upper bound on its maximum quantum depth; i.e. a classical algorithm aided by low-depth quantum circuits.
+</ul>
+ </p>
+
+<p>Previously, only results for the preimage search problem were known for these models (by Sun and Zheng; Rosmanis; Chen, Cotler, Huang and Li) while nothing was known about the collision finding problem.</p>
+
+ <p>Along with our main results, we develop an information-theoretic framework for recording query transcripts of quantum-classical algorithms. The main feature of this framework is that it allows us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- consistently. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the compressed oracle framework of Zhandry for recording quantum queries. We demonstrate its applicability by giving simpler proofs of the optimal lower bounds for NISQ preimage search and by showing optimal lower bounds for NISQ collision finding.</p>
+</div></noscript>
+
+<li>
+<span class="papertitle">Lower Bounds on the Complexity of Mixed-Integer Programs for Stable Set and Knapsack</span><br>
+Jamico Schade, Makrand Sinha and <a href="https://weltge.de/">Stefan Weltge</a><br> 
+To appear in <strong>IPCO 2024</strong>.</li>
+[<a href="https://arxiv.org/abs/2308.16711">arXiv</a>]
+<a href="#" onclick="toggle('mip');return false;" class="plus" id="mip-plus">[Abstract +]</a> <div id="mip" class="abstract">
+    <p>Standard mixed-integer programming formulations for the stable set problem on \(n\)-node graphs require n integer variables. We prove that this is almost optimal: We give a family of \(n\)-node graphs for which every polynomial-size MIP formulation requires \(\Omega(n/\log^2 n)\) integer variables. By a polyhedral reduction we obtain an analogous result for \(n\)-item knapsack problems. In both cases, this improves the previously known bounds of \(\Omega(\sqrt{n}/\log n)\) by Cevallos, Weltge and Zenklusen (SODA 2018).</p>
+    <p>To this end, we show that there exists a family of \(n\)-node graphs whose stable set polytopes satisfy the following: any \((1+\epsilon/n)\)-approximate extended formulation for these polytopes, for some constant \(\epsilon>0\), has size \(2^{\Omega(n/\log n)}\). Our proof extends and simplifies the information-theoretic methods due to Göös, Jain and Watson (FOCS 2016, SIAM J. Comput. 2018) who showed the same result for the case of exact extended formulations (i.e. \(\epsilon =0)\).</p>
+</div>
+<noscript>
+<div class="nsabstract">
+    <p>Standard mixed-integer programming formulations for the stable set problem on \(n\)-node graphs require n integer variables. We prove that this is almost optimal: We give a family of \(n\)-node graphs for which every polynomial-size MIP formulation requires \(\Omega(n/\log^2 n)\) integer variables. By a polyhedral reduction we obtain an analogous result for \(n\)-item knapsack problems. In both cases, this improves the previously known bounds of \(\Omega(\sqrt{n}/\log n)\) by Cevallos, Weltge and Zenklusen (SODA 2018).</p>
+    <p>To this end, we show that there exists a family of \(n\)-node graphs whose stable set polytopes satisfy the following: any \((1+\epsilon/n)\)-approximate extended formulation for these polytopes, for some constant \(\epsilon>0\), has size \(2^{\Omega(n/\log n)}\). Our proof extends and simplifies the information-theoretic methods due to Göös, Jain and Watson (FOCS 2016, SIAM J. Comput. 2018) who showed the same result for the case of exact extended formulations (i.e. \(\epsilon =0)\).</p>
+</div></noscript>
+
+
 <li>
 <span class="papertitle"> Fourier Growth of Communication Protocols for XOR Functions</span><br>
-<a href="https://www.cs.princeton.edu/~ugirish/">Uma Girish</a>, Makrand Sinha,  <a href="https://www.avishaytal.org/">Avishay Tal</a> and <a href="https://shlw.github.io/">Kewen Wu</a>,<br> 
-To appear in <strong>FOCS 2023</strong>.</li>
+<a href="https://www.cs.princeton.edu/~ugirish/">Uma Girish</a>, Makrand Sinha,  <a href="https://www.avishaytal.org/">Avishay Tal</a> and <a href="https://shlw.github.io/">Kewen Wu</a><br> 
+Appeared in <strong>FOCS 2023</strong>.</li>
 [<a href="https://arxiv.org/abs/2307.13926">arXiv</a>] 
  <a href="#" onclick="toggle('xor');return false;" class="plus" id="xor-plus">[Abstract +]</a> <div id="xor" class="abstract">
      <p>The level-\(k\) \(\ell_1\)-Fourier weight of a Boolean function refers to the sum of absolute values of its level-\(k\) Fourier coefficients. Fourier growth refers to the growth of these weights as \(k\) grows. It has been extensively studied for various computational models, and bounds on the Fourier growth, even for the first few levels, have proven useful in learning theory, circuit lower bounds, pseudorandomness, and quantum-classical separations.</p>
@@ -91,22 +183,6 @@ To appear in <strong>FOCS 2023</strong>.</li>
 </div></noscript>
 
 
-<li>
-<span class="papertitle"> Quantum-Classical Tradeoffs in the Random Oracle Model</span><br>
-<a href="https://yassine-hamoudi.github.io/">Yassine Hamoudi</a>, <a href="https://sites.google.com/view/qipengliu">Qipeng Liu</a> and Makrand Sinha<br> 
-Preprint.</li>
-[<a href="https://arxiv.org/abs/2211.12954">arXiv</a>] 
- <a href="#" onclick="toggle('hybrid');return false;" class="plus" id="hybrid-plus">[Abstract +]</a> <div id="hybrid" class="abstract">
-     <p>We study tradeoffs between quantum and classical queries for hybrid algorithms that have black-box access to a random oracle. Although there are several established techniques for proving query lower bounds for both quantum and classical algorithms, there is no such widely applicable technique for hybrid algorithms and the optimal tradeoffs for many fundamental problems are still unknown --- an optimal tradeoff for the search problem was only shown recently by Rosmanis (arXiv 2022), although not in the random oracle model. For  another fundamental problem, collision finding, the optimal tradeoff was not known.</p>
-
-     <p>In this work, we develop a framework for recording a query transcript for quantum-classical algorithms that represents the knowledge gained by the algorithm. The main feature of this framework is to allow us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- in a consistent way. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the <em>compressed oracle</em> framework of Zhandry (CRYPTO 2019) for recording quantum queries. We demonstrate its applicability by giving a simpler proof of the optimal quantum-classical tradeoff for search and by showing an optimal tradeoff for collision finding.</p>
-</div>
-<noscript>
-<div class="nsabstract">
-    <p>We study tradeoffs between quantum and classical queries for hybrid algorithms that have black-box access to a random oracle. Although there are several established techniques for proving query lower bounds for both quantum and classical algorithms, there is no such widely applicable technique for hybrid algorithms and the optimal tradeoffs for many fundamental problems are still unknown --- an optimal tradeoff for the search problem was only shown recently by Rosmanis (arXiv 2022), although not in the random oracle model. For  another fundamental problem, collision finding, the optimal tradeoff was not known.</p>
-
-    <p> In this work, we develop a framework for recording a query transcript for quantum-classical algorithms that represents the knowledge gained by the algorithm. The main feature of this framework is to allow us to record queries in two incompatible bases --- classical queries in the standard basis and quantum queries in the Fourier basis --- in a consistent way. We call the framework the <em>hybrid compressed oracle</em> as it naturally interpolates between the classical way of recording queries and the <em>compressed oracle</em> framework of Zhandry (CRYPTO 2019) for recording quantum queries. We demonstrate its applicability by giving a simpler proof of the optimal quantum-classical tradeoff for search and by showing an optimal tradeoff for collision finding.</p>
-</div></noscript>
 
 <li>
 <span class="papertitle"> Quantum Cryptography in Algorithmica</span><br>
