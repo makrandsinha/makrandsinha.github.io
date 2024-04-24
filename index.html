@@ -35,7 +35,7 @@ Urbana, IL 61801-2302 <br>
 <h2>About Me</h2>
 
 
-<p class="about">I am an assistant professor in the Department of Computer Science at the <span class="papertitle">University of Illinois at Urbana-Champaign</span>.
+<p class="about">I am an assistant professor in the Siebel School of Computing and Data Science at the <span class="papertitle">University of Illinois at Urbana-Champaign</span>.
 
 Previously I was a Simons-Berkeley postdoctoral fellow at the <a href="https://simons.berkeley.edu">Simons Institute</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a> and a postdoctoral researcher in the <a href ="https://www.cwi.nl/research/groups/networks-and-optimization">Networks and Optimization</a> group at <a href="https://www.cwi.nl/">CWI</a> in Amsterdam. 
 </p>
@@ -57,8 +57,8 @@ In Fall 2023, I will be joining <span class="papertitle">University of Illinois 
 
 <h3>Teaching</h3>
 <ul>
-    <li> <a href="https://courses.grainger.illinois.edu/cs498qc3/fa2023">CS 498QC: Introduction to Quantum Computing (Fall 2023)</a></li>
-    <li> <a href="https://courses.grainger.illinois.edu/cs598qc/sp2024">CS 598QC: Frontiers of Quantum Complexity (Spring 2024)</a>
+       <li> <a href="https://courses.grainger.illinois.edu/cs598qc/sp2024">CS 598QC: Frontiers of Quantum Complexity (Spring 2024)</a></li>
+       <li> <a href="https://courses.grainger.illinois.edu/cs498qc3/fa2023">CS 498QC: Introduction to Quantum Computing (Fall 2023)</a>
 </ul>
 
 <div id="pubs">
@@ -67,16 +67,28 @@ In Fall 2023, I will be joining <span class="papertitle">University of Illinois 
 
 
 <li>
-<span class="papertitle">Pseudorandom unitaries with non-adaptive security</span><br>
+<span class="papertitle">Simple constructions of linear-depth t-designs and pseudorandom unitaries</span><br>
 Tony Metger, <a href="http://www.mit.edu/~poremba">Alex Poremba</a>, Makrand Sinha and <a href="https://henryyuen.net/">Henry Yuen</a><br> 
-Preprint.</li>
-[<a href="https://arxiv.org/abs/2402.14803">arXiv</a>] 
+Preprint. Subsumes <a href="https://arxiv.org/abs/2402.14803">arXiv:2402.14803</a>.</li>
+[<a href="https://arxiv.org/abs/2404.12647">arXiv</a>] 
  <a href="#" onclick="toggle('pru');return false;" class="plus" id="pru-plus">[Abstract +]</a> <div id="pru" class="abstract">
-Pseudorandom unitaries (PRUs) are ensembles of efficiently implementable unitary operators that cannot be distinguished from Haar random unitaries by any quantum polynomial-time algorithm with query access to the unitary. We present a simple PRU construction that is a concatenation of a random Clifford unitary, a pseudorandom binary phase operator, and a pseudorandom permutation operator. We prove that this PRU construction is secure against non-adaptive distinguishers assuming the existence of quantum-secure one-way functions. This means that no efficient quantum query algorithm that is allowed a single application of \(U^{\otimes \mathrm{poly}(n)}\) can distinguish whether an \(n\)-qubit unitary \(U\) was drawn from the Haar measure or our PRU ensemble. We conjecture that our PRU construction remains secure against adaptive distinguishers, i.e. secure against distinguishers that can query the unitary polynomially many times in sequence, not just in parallel. 
+Uniformly random unitaries, i.e. unitaries drawn from the Haar measure, have many useful properties, but cannot be implemented efficiently. This has motivated a long line of research into random unitaries that "look" sufficiently Haar random while also being efficient to implement. Two different notions of derandomisation have emerged: t-designs are random unitaries that information-theoretically reproduce the first t moments of the Haar measure, and pseudorandom unitaries (PRUs) are random unitaries that are computationally indistinguishable from Haar random.<br>
+In this work, we take a unified approach to constructing \(t\)-designs and PRUs. For this, we introduce and analyse the "\(PFC\) ensemble", the product of a random computational basis permutation \(P\), a random binary phase operator \(F\), and a random Clifford unitary \(C\). We show that this ensemble reproduces exponentially high moments of the Haar measure. We can then derandomise the \(PFC\) ensemble to show the following:
+<ul>
+    <li> <strong>Linear-depth \(t\)-designs.</strong> We give the first construction of a (diamond-error) approximate \(t\)-design with circuit depth linear in \(t\). This follows from the PFC ensemble by replacing the random phase and permutation operators with their \(2t\)-wise independent counterparts.</li>
+    <li> <strong>Non-adaptive PRUs.</strong> We give the first construction of PRUs with non-adaptive security, i.e. we construct unitaries that are indistinguishable from Haar random to polynomial-time distinguishers that query the unitary in parallel on an arbitary state. This follows from the PFC ensemble by replacing the random phase and permutation operators with their pseudorandom counterparts.</li>
+    <li> <strong>Adaptive pseudorandom isometries.</strong> We show that if one considers isometries (rather than unitaries) from \(n\) to \(n+\omega(\log n)\) qubits, a small modification of our PRU construction achieves general adaptive security. </li>
+</ul>
  </div>
 <noscript>
 <div class="nsabstract">
-Pseudorandom unitaries (PRUs) are ensembles of efficiently implementable unitary operators that cannot be distinguished from Haar random unitaries by any quantum polynomial-time algorithm with query access to the unitary. We present a simple PRU construction that is a concatenation of a random Clifford unitary, a pseudorandom binary phase operator, and a pseudorandom permutation operator. We prove that this PRU construction is secure against non-adaptive distinguishers assuming the existence of quantum-secure one-way functions. This means that no efficient quantum query algorithm that is allowed a single application of \(U^{\otimes \mathrm{poly}(n)}\) can distinguish whether an \(n\)-qubit unitary \(U\) was drawn from the Haar measure or our PRU ensemble. We conjecture that our PRU construction remains secure against adaptive distinguishers, i.e. secure against distinguishers that can query the unitary polynomially many times in sequence, not just in parallel. 
+Uniformly random unitaries, i.e. unitaries drawn from the Haar measure, have many useful properties, but cannot be implemented efficiently. This has motivated a long line of research into random unitaries that "look" sufficiently Haar random while also being efficient to implement. Two different notions of derandomisation have emerged: t-designs are random unitaries that information-theoretically reproduce the first t moments of the Haar measure, and pseudorandom unitaries (PRUs) are random unitaries that are computationally indistinguishable from Haar random.<br>
+In this work, we take a unified approach to constructing \(t\)-designs and PRUs. For this, we introduce and analyse the "\(PFC\) ensemble", the product of a random computational basis permutation \(P\), a random binary phase operator \(F\), and a random Clifford unitary \(C\). We show that this ensemble reproduces exponentially high moments of the Haar measure. We can then derandomise the \(PFC\) ensemble to show the following:
+<ul>
+    <li> <strong>Linear-depth \(t\)-designs.</strong> We give the first construction of a (diamond-error) approximate \(t\)-design with circuit depth linear in \(t\). This follows from the PFC ensemble by replacing the random phase and permutation operators with their \(2t\)-wise independent counterparts.</li>
+    <li> <strong>Non-adaptive PRUs.</strong> We give the first construction of PRUs with non-adaptive security, i.e. we construct unitaries that are indistinguishable from Haar random to polynomial-time distinguishers that query the unitary in parallel on an arbitary state. This follows from the PFC ensemble by replacing the random phase and permutation operators with their pseudorandom counterparts.</li>
+    <li> <strong>Adaptive pseudorandom isometries.</strong> We show that if one considers isometries (rather than unitaries) from \(n\) to \(n+\omega(\log n)\) qubits, a small modification of our PRU construction achieves general adaptive security. </li>
+
 </div></noscript>
 
 
@@ -105,6 +117,7 @@ To appear in <strong>STOC 2024</strong>.</li>
 <span class="papertitle"> The NISQ Complexity of Collision Finding</span><br>
 <a href="https://yassine-hamoudi.github.io/">Yassine Hamoudi</a>, <a href="https://sites.google.com/view/qipengliu">Qipeng Liu</a> and Makrand Sinha<br> 
 To appear in <strong>Eurocrypt 2024</strong>.</li>
+[<a href="https://arxiv.org/abs/2211.12954">arXiv</a>] 
 <a href="#" onclick="toggle('hybrid');return false;" class="plus" id="hybrid-plus">[Abstract +]</a> <div id="hybrid" class="abstract">
  <p>
      Collision-resistant hashing, a fundamental primitive in modern cryptography, ensures that there is no efficient way to find distinct inputs that produce the same hash value. This property underpins the security of various cryptographic applications, making it crucial to understand its complexity. The complexity of this problem is well-understood in the classical setting and \(\Theta(N^{1/2})\) queries are needed to find a collision. However, the advent of quantum computing has introduced new challenges since quantum adversaries --- equipped with the power of quantum queries --- can find collisions much more efficiently. Brassard, Høyer and Tapp and Aaronson and Shi established that full-scale quantum adversaries require \(\Theta(N^{1/3})\) queries to find a collision, prompting a need for longer hash outputs, which impacts efficiency in terms of the key lengths needed for security.</p>
